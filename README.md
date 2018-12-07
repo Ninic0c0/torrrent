@@ -16,7 +16,7 @@ postrm.sh -> Seach and delete all broken symlink and call filebot cleaner
 ```sh
 # rtorrent.rc
 method.set_key = event.download.erased,filebot_cleaner,"execute2=/<path_to_the_script>/postrm.sh"  
-method.set_key = event.download.finished,filebot,"execute2={/opt/rtorrent/scripts/postdl.sh,$d.get_base_path=,$d.get_name=}"
+method.set_key = event.download.finished,filebot,"execute2={/<path_to_the_script>/postdl.sh,$d.get_base_path=,$d.get_name=}"
 ```
 
 ### Check log files
